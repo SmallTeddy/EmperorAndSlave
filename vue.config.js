@@ -19,21 +19,5 @@ module.exports = {
     // host: '',
     port: '8080',
     open: true //自动打开浏览器
-  },
-  chainWebpack: config => {
-    // 压缩图片
-    config.module
-      .rule('images')
-      .use('image-webpack-loader')
-      .loader('image-webpack-loader')
-      .options({ bypassOnDebug: true })
-      .end();
-  },
-  configureWebpack: config => {
-    config.resolve.modules.push(path.resolve(__dirname, 'src'));
-    config.module.rules.push({
-      test: /\.md$/,
-      use: [{ loader: 'html-loader' }, { loader: 'markdown-loader' }]
-    });
   }
 };
