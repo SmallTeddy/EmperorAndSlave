@@ -71,7 +71,7 @@ For the **Emperor**, the best strategy is:
 2、Try to let the emperor appear in the first three games, the more forward the probability of winning, the reason is as before. Of course, considering the psychological state of both sides in different games, the possibility of the emperor winning the fourth game was not ruled out.
 
 
-==================================================================
+============================================================================
 
 
 ## 游戏介绍：
