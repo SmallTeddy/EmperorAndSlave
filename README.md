@@ -35,7 +35,7 @@ If you treat each card as indifference, randomly choose one card from all cards 
 
  
 
-|                  | 1    | 2    | 3    | 4    | 5    | 总计 |
+|                  | 1    | 2    | 3    | 4    | 5    | Total |
 | ---------------- | ---- | ---- | ---- | ---- | ---- | ---- |
 | **Emperor** Wins | 0.32 | 0.24 | 0.16 | 0.08 | 0    | 0.8  |
 | Draw             | 0.64 | 0.36 | 0.16 | 0.04 | 0    |      |
@@ -49,7 +49,7 @@ If you take the cards in your hand as two types, one is **Citizen** cards and th
 
  
 
-|                  | 1    | 2     | 3     | 4     | 5     | 总计  |
+|                  | 1    | 2     | 3     | 4     | 5     | Total  |
 | ---------------- | ---- | ----- | ----- | ----- | ----- | ----- |
 | **Emperor** Wins | 0.5  | 0.125 | 0.031 | 0.008 | 0     | 0.664 |
 | Draw             | 0.25 | 0.063 | 0.016 | 0.004 | 0     |       |
