@@ -1,3 +1,79 @@
+## Game Description：
+
+Two player game, each side holds 5 cards.
+
+**Emperor**side：hold one **Emperor** card（Emperor）, four citizen cards（Citizen）
+
+**Slave**side：hold one **Slave** card（Slave）, four citizen cards（Citizen）
+
+Both sides draw one card at a time for comparison.
+
+ 
+
+## Rules of the game：
+
+1、**Emperor** card is greater than **Citizen** card;
+ **Citizen** card is greater than **Slave** card;
+ **Slave** card is greater than **Emperor** card.
+
+2、The citizens offset each other, discard each card for the next round. The offset card is no longer returned to the parties.
+
+3、In order to avoid blind play, both sides need to confirm before each play.
+
+4、**Emperor** card or **Slave** card was killed，The game ends and the killed party loses.
+
+ 
+
+## Winning Analysis：
+
+Winning is based on this logic：**Emperor** card is only needed to come out once, If you don't meet a **Slave** card, you win a **Citizen** card,you can have more than one **Citizen** card, Enough to win the **Slave** card. In the same way, **Slave** card is only needed to come out once, If you don't meet **Citizen** card, Then win the **Emperor** card, game over.
+
+ 
+If you treat each card as indifference, randomly choose one card from all cards at a time. 
+
+### **Emperor** Wins：
+
+ 
+
+|                  | 1    | 2    | 3    | 4    | 5    | 总计 |
+| ---------------- | ---- | ---- | ---- | ---- | ---- | ---- |
+| **Emperor** Wins | 0.32 | 0.24 | 0.16 | 0.08 | 0    | 0.8  |
+| Draw             | 0.64 | 0.36 | 0.16 | 0.04 | 0    |      |
+| **Emperor** Lost | 0.04 | 0.04 | 0.04 | 0.04 | 0.04 | 0.2  |
+
+ 
+
+If you take the cards in your hand as two types, one is **Citizen** cards and the other is non **Citizen** cards（**Emperor** or **Slave**）, randomly choose one of the two categories at a time.
+
+### **Emperor** Wins：
+
+ 
+
+|                  | 1    | 2     | 3     | 4     | 5     | 总计  |
+| ---------------- | ---- | ----- | ----- | ----- | ----- | ----- |
+| **Emperor** Wins | 0.5  | 0.125 | 0.031 | 0.008 | 0     | 0.664 |
+| Draw             | 0.25 | 0.063 | 0.016 | 0.004 | 0     |       |
+| **Emperor** Lost | 0.25 | 0.063 | 0.016 | 0.004 | 0.004 | 0.336 |
+
+ 
+
+There are two best strategies for the **Slave** side：
+
+1、In the first game, try to guide the game into the "five cards choose one" mode; after the second game, try to guide the game into the "**Emperor** or **Citizen**" mode.
+
+2、The later the game, the greater the odds. Similarly, the later the game, the greater the pressure on the **Emperor**. (from the third inning, the emperor's winning rate was only 61% to 67%; from the fourth inning, the emperor's winning rate was only 50%).
+
+
+For the **Emperor**, the best strategy is:
+
+1、In the first game, try to guide the game into the "**Emperor** or **Citizen**" mode; after the second game, try to guide the game into the "N cards choose one" mode.
+
+2、Try to let the emperor appear in the first three games, the more forward the probability of winning, the reason is as before. Of course, considering the psychological state of both sides in different games, the possibility of the emperor winning the fourth game was not ruled out.
+
+
+==================================================================
+
+
 ## 游戏介绍：
 
 两方游戏，双方各持5张牌。
@@ -16,11 +92,9 @@
 
 2、市民对市民互相抵消，各自弃牌进入下一轮。抵消牌不再交还各方。
 
-3、为避免各方盲目出牌，每次出牌之前，双方需要目视各自牌面进行确认。
+3、为避免各方盲目出牌，每次出牌之前，双方出牌前需进行确认。
 
-4、每次出牌之前双方可以自由交谈。
-
-5、**皇帝**或奴隶被杀，游戏宣告结束，被杀方告负。
+4、**皇帝**或奴隶被杀，游戏宣告结束，被杀方告负。
 
  
 
