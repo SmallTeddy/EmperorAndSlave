@@ -1,10 +1,10 @@
 ## Game Description：
 
-Two player game, each side holds 5 cards.
+A two-player game, each side holds 5 cards.
 
-**Emperor**side：hold one **Emperor** card（Emperor）, four citizen cards（Citizen）
+**Emperor**side：hold one **Emperor** card（Emperor）, four citizens cards（Citizen）
 
-**Slave**side：hold one **Slave** card（Slave）, four citizen cards（Citizen）
+**Slave**side：hold one **Slave** card（Slave）, four citizens cards（Citizen）
 
 Both sides draw one card at a time for comparison.
 
@@ -26,7 +26,7 @@ Both sides draw one card at a time for comparison.
 
 ## Winning Analysis：
 
-Winning is based on this logic：**Emperor** card is only needed to come out once, If you don't meet a **Slave** card, you win a **Citizen** card,you can have more than one **Citizen** card, Enough to win the **Slave** card. In the same way, **Slave** card is only needed to come out once, If you don't meet **Citizen** card, Then win the **Emperor** card, game over.
+Winning is based on this logic：**Emperor** card is only needed to come out once, If you don't meet a **Slave** card, you win a **Citizen** card, you can have more than one **Citizen** card, Enough to win the **Slave** card. In the same way, **Slave** card is only needed to come out once, If you don't meet **Citizen** card, Then win the **Emperor** card, game over.
 
  
 If you treat each card as indifference, randomly choose one card from all cards at a time. 
