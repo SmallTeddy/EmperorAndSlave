@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import KingAndSlave from '../views/KingAndSlave.vue'
+import EmperorAndSlave from '../views/EmperorAndSlave.vue'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'KingAndSlave',
-    component: KingAndSlave
+    name: 'EmperorAndSlave',
+    component: EmperorAndSlave
   }
 ]
 
