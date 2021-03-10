@@ -38,7 +38,6 @@
         <el-button type="warning" slot="reference" @click="showGameRules = !showGameRules">Game Rules</el-button>
       </el-popover>
       <el-button type="info">{{game_time}}</el-button>
-      <el-button type="info" @click="getOneWord">oneword</el-button>
     </div>
     <div game_main></div>
   </div>
@@ -46,7 +45,6 @@
 
 <script lang='ts'>
 import { Vue, Component } from "vue-property-decorator";
-import { OneWord } from "@/api/oneword"
 
 @Component({})
 export default class KingAndSlave extends Vue {
@@ -82,16 +80,6 @@ export default class KingAndSlave extends Vue {
     this.timeStart();
   }
 
-  private getOneWord(): any {
-    const params = {
-      c: 'c',
-      encode: 'text',
-      charset: 'utf-8'
-    };
-    OneWord(params).then((res: any) => {
-      console.log(res)
-    })
-  }
 }
 </script>
 
